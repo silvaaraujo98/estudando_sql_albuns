@@ -1,10 +1,8 @@
-Claro! Aqui está um exemplo de README em português, com as instruções ajustadas para armazenar as queries em arquivos .txt:
 
----
 
 # Consultas SQL para Prática
 
-Este repositório contém um conjunto de consultas SQL projetadas para ajudar você a melhorar suas habilidades em SQL. As consultas estão categorizadas em níveis médios e difíceis, cobrindo várias operações SQL, como joins, group by e expressões de tabela comum (CTEs). Essas questões são do livro Introdução à linguagem SQL de Thomas Nield, peugei o banco de dados que ele disponibilizou no github dele.
+Este repositório contém um conjunto de consultas SQL projetadas para ajudar você a melhorar suas habilidades em SQL. As consultas estão categorizadas em níveis médios e difíceis, cobrindo várias operações SQL, como joins, group by e expressões de tabela comum (CTEs). Essas questões são do livro Introdução à linguagem SQL de Thomas Nield, peguei o banco de dados que ele disponibilizou no github dele.
 
 ## Índice
 
