@@ -1,0 +1,6 @@
+-- 9.Encontrar os nomes das faixas (tracks) e os nomes dos compositores cujas faixas têm mais de 5 minutos (300000 milissegundos).
+SELECT name,
+       composer
+FROM track
+WHERE Milliseconds/60000 >= 5
+  AND composer IS NOT NULL;

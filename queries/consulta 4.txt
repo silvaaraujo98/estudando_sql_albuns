@@ -1,0 +1,7 @@
+-- Listar o nome e a quantidade de faixas de cada playlist.
+SELECT a.name,
+       COUNT(DISTINCT b.trackid) AS qtd_tracks
+FROM playlist AS a
+INNER JOIN playlisttrack AS b ON a.playlistid = b.playlistid
+GROUP BY a.name
+ORDER BY qtd_tracks DESC;

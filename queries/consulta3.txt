@@ -1,0 +1,3 @@
+-- Encontrar todos os funcionários que reportam ao gerente com EmployeeId = 1.
+SELECT * FROM employee
+WHERE reportsto = 1;

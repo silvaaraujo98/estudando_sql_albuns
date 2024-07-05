@@ -1,0 +1,6 @@
+-- 10.Mostrar os nomes dos álbuns que possuem mais de 10 faixas (tracks)
+SELECT a.title, COUNT(trackid) AS counttracks FROM album AS a INNER JOIN track AS b
+ON a.albumid = b.albumid
+GROUP BY a.title
+HAVING counttracks > 10
+ORDER BY counttracks DESC ;

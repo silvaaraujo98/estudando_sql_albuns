@@ -1,0 +1,4 @@
+-- Mostrar o nome dos clientes e a cidade onde moram.
+SELECT firstname || ' ' ||lastname AS fullname,
+       city
+FROM customer;

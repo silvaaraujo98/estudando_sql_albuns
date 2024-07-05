@@ -1,0 +1,12 @@
+--Listar o nome dos clientes e o total de suas compras, ordenado pelo valor total de compras em ordem decrescente.
+WITH CustomerInfo AS
+  (SELECT firstname || ' ' ||lastname AS fullname,
+          city,
+          CustomerId
+   FROM customer)
+SELECT a.fullname,
+       SUM(b.total) AS total
+FROM CustomerInfo AS a
+LEFT JOIN invoice AS b ON a.customerid = b.customerid
+GROUP BY a.fullname
+ORDER BY total DESC;

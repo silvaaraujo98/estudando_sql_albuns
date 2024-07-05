@@ -1,0 +1,5 @@
+-- Listar os nomes dos álbuns e os nomes dos artistas correspondentes.
+SELECT a.Title AS album_title,
+       b.Name AS artist
+FROM album AS a
+INNER JOIN artist AS b ON a.artistid = b.artistid;

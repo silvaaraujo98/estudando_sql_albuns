@@ -1,0 +1,9 @@
+--8. Mostrar a quantidade de faixas (tracks) por gênero, apenas para gêneros que têm mais de 20 faixas.
+
+SELECT b.name,
+       COUNT(trackid) AS track_count
+FROM track AS a
+INNER JOIN genre AS b ON a.genreid = b.genreid
+GROUP BY b.name
+HAVING track_count >= 20
+ORDER BY track_count DESC

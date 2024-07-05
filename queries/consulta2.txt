@@ -1,0 +1,4 @@
+-- Mostrar o total de vendas (soma de Total) por país.
+SELECT BillingCountry,round(SUM(Total),2) AS total FROM Invoice
+GROUP BY BillingCountry
+ORDER BY total DESC;

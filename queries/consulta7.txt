@@ -1,0 +1,11 @@
+-- 7.Encontrar o nome dos clientes que compraram mais de 5 produtos diferentes.
+WITH tracksbyinvoice AS
+  (SELECT invoiceid,
+          COUNT(DISTINCT(trackid)) AS qtdtracks
+   FROM invoiceline
+   GROUP BY invoiceid)
+SELECT DISTINCT(firstname||" " ||lastname) AS fullname
+FROM tracksbyinvoice AS a
+INNER JOIN invoice AS b ON a.invoiceid = b.invoiceid
+INNER JOIN customer AS c ON b.customerid = c.customerid
+WHERE qtdtracks >= 5;
