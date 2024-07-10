@@ -19,9 +19,11 @@ Este repositório inclui uma série de consultas SQL para um banco de dados de e
 
 As consultas estão divididas em 5 níveis:
 - ★☆☆☆☆ 1 Estrela
-- Difícil
-
-## Consultas Médias
+- ★★☆☆☆ 2 Estrelas
+- ★★★☆☆ 3 Estrelas
+- ★★★★☆ 4 Estrelas
+- ★★★★★ 5 Estrelas
+### ★☆☆☆☆ 1 Estrela
 
 1. **Listar os nomes dos álbuns e os nomes dos artistas correspondentes.**
    - [consulta1.txt](queries/consulta1.txt)
@@ -38,7 +40,7 @@ As consultas estão divididas em 5 níveis:
 5. **Mostrar o nome dos clientes e a cidade onde moram.**
    - [consulta5.txt](queries/consulta5.txt)
 
-## Consultas Difíceis
+### ★★☆☆☆ 2 Estrelas
 
 1. **Listar o nome dos clientes e o total de suas compras, ordenado pelo valor total de compras em ordem decrescente.**
    - [consulta6.txt](queries/consulta6.txt)
@@ -55,6 +57,43 @@ As consultas estão divididas em 5 níveis:
 5. **Mostrar os nomes dos álbuns que possuem mais de 10 faixas (tracks).**
    - [consulta10.txt](queries/consulta10.txt)
 
+### ★★★☆☆ 3 Estrelas
+
+1. **Listar os álbuns onde a média das durações das faixas é superior a 5 minutos.**
+   - [consulta11.txt](queries/consulta11.txt)
+2. **Mostrar o cliente que fez a compra mais cara e o valor total dessa compra.**
+   - [consulta12.txt](queries/consulta12.txt)
+3. **Listar os compositores cujas faixas têm a maior média de duração e o valor dessa média.**
+   - [consulta13.txt](queries/consulta13.txt)
+4. **Encontrar o cliente que comprou a maior quantidade de faixas em um único pedido (invoice).**
+   - [consulta14.txt](queries/consulta14.txt)
+5. **Obter os Clientes que compraram acima da média de compra de todos os clientes.**
+   - [consulta16.txt](queries/consulta16.txt)
+### ★★★★☆ 4 Estrelas
+
+1. **Obter o valor gasto em mês/ano.**
+   - [consulta17.txt](queries/consulta17.txt)
+2. **Obter o TM por Ano.**
+   - [consulta18.txt](queries/consulta18.txt)
+3. **Obter os Gêneros mais vendidos por Ano.**
+   - [consulta19.txt](queries/consulta18.txt)
+4. **Obter os Gêneros mais vendidos por País.**
+   - [consulta20.txt](queries/consulta18.txt)
+5. **Qual a frequência dos clientes?**
+   - A fazer
+
+### ★★★★★ 5 Estrelas
+
+1. **Calcular a Receita Média por Gênero de Música.**
+   - A fazer
+2. **Encontrar o Cliente com o Maior Valor Total de Compras em Cada Ano.**
+   - A fazer
+3. **Determinar as Faixas (Tracks) que Nunca Foram Vendidas.**
+   - A fazer
+4. **Encontrar os Clientes que Não Fizeram Compras no Último Ano (2013).**
+   - A fazer
+5. **Listar os nomes dos clientes que compraram todas as faixas de um álbum específico.**
+   - A fazer
 ## Uso
 
 1. Clone o repositório:
