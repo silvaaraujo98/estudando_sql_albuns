@@ -1,5 +1,6 @@
 
-![status](https://img.shields.io/badge/status-em%20progresso-yellow)
+![status](https://img.shields.io/badge/status-em%20progresso-yellow) ![GitHub last commit](https://img.shields.io/github/last-commit/silvaarauji98/estudando_sql_albuns)
+![Maintenance](https://img.shields.io/maintenance/yes/2024)
 # Consultas SQL para Prática
 
 Este repositório contém um conjunto de consultas SQL projetadas para ajudar você a melhorar suas habilidades em SQL. As consultas estão categorizadas em níveis médios e difíceis, cobrindo várias operações SQL, como joins, group by e expressões de tabela comum (CTEs). Essas questões são do livro Introdução à linguagem SQL de Thomas Nield, peguei o banco de dados que ele disponibilizou no github dele.
