@@ -9,8 +9,12 @@ Este repositório contém um conjunto de consultas SQL projetadas para ajudar vo
 ## Índice
 
 - [Introdução](#introdução)
-- [★☆☆☆☆ 1 Estrela](#★☆☆☆☆ 1 Estrela)
-- [Consultas Difíceis](#consultas-difíceis)
+- [Níveis de Dificuldade das Questões](#níveis-de-dificuldade-das-questões)
+  - [★☆☆☆☆ 1 Estrela](#1-estrela)
+  - [★★☆☆☆ 2 Estrelas](#2-estrelas)
+  - [★★★☆☆ 3 Estrelas](#3-estrelas)
+  - [★★★★☆ 4 Estrelas](#4-estrelas)
+  - [★★★★★ 5 Estrelas](#5-estrelas)
 - [Uso](#uso)
 - [Contribuição](#contribuição)
 - [Licença](#licença)
