@@ -17,8 +17,8 @@ Este repositório contém um conjunto de consultas SQL projetadas para ajudar vo
 
 Este repositório inclui uma série de consultas SQL para um banco de dados de exemplo que inclui tabelas como `Artist`, `Album`, `Customer`, `Employee`, `Genre`, `Invoice`, `InvoiceLine`, `MediaType`, `Playlist`, `PlaylistTrack` e `Track`.
 
-As consultas estão divididas em dois níveis:
-- Médio
+As consultas estão divididas em 5 níveis:
+- ★☆☆☆☆ 1 Estrela
 - Difícil
 
 ## Consultas Médias
