@@ -1,0 +1,17 @@
+-- Obter os Generos mais vendidos por País
+
+WITH trackbycountry AS
+  (SELECT *
+   FROM invoice AS a
+   INNER JOIN customer AS b ON a.customerid = b.customerid
+   INNER JOIN invoiceline AS c ON a.invoiceid = c.invoiceid
+   INNER JOIN track AS d ON c.trackid = d.trackid)
+SELECT a.country,
+       b.name,
+       SUM(a.quantity) AS sold_amount
+FROM trackbycountry AS a
+INNER JOIN genre AS b ON a.genreid = b.genreid
+GROUP BY a.country,
+         b.name
+ORDER BY a.country,
+         sold_amount DESC ;

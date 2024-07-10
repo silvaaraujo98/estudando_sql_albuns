@@ -1,0 +1,13 @@
+-- Obter os Generos mais vendidas por Ano
+
+SELECT strftime('%Y', a.invoicedate) AS ano,
+       d.name,
+       SUM(quantity) AS qt_sales
+FROM invoice AS a
+INNER JOIN invoiceline AS b ON a.invoiceid = b.invoiceid
+INNER JOIN track AS c ON b.trackid = c.trackid
+INNER JOIN genre AS d ON c.genreid = d.genreid
+GROUP BY ano,
+         d.name
+ORDER BY ano,
+         qt_sales DESC ;

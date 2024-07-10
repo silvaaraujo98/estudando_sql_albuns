@@ -1,0 +1,21 @@
+-- Encontrar o cliente que comprou a maior quantidade de faixas em um único pedido (invoice)
+
+SELECT c.customerid,
+       c.max_qt_of_tracks,
+       d.firstname,
+       d.lastname
+FROM
+  (SELECT Customerid,
+          max_qt_of_tracks
+   FROM
+     (SELECT *
+      FROM Invoice AS a
+      INNER JOIN
+        (SELECT InvoiceId,
+                MAX(qt_of_tracks) AS max_qt_of_tracks
+         FROM
+           (SELECT InvoiceId,
+                   COUNT(trackid) AS qt_of_tracks
+            FROM invoiceline
+            GROUP BY InvoiceId)) AS b ON a.invoiceid = b.invoiceid)) AS c
+INNER JOIN customer AS d ON c.customerid = d.customerid;

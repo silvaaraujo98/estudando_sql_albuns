@@ -1,0 +1,11 @@
+-- Mostrar o cliente que fez a compra mais cara e o valor total dessa compra.
+
+SELECT a.firstname,
+       a.lastname
+FROM customer AS a
+INNER JOIN
+  (SELECT *
+   FROM invoice
+   WHERE TOTAL =
+       (SELECT MAX(TOTAL)
+        FROM invoice)) AS b ON a.customerid = b.customerid;

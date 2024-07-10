@@ -1,0 +1,11 @@
+--Obter o valor gasto em mês/ano
+SELECT 
+    strftime('%m-%Y', InvoiceDate) AS YearMonth,
+    strftime('%Y',InvoiceDate) AS Year,
+    strftime('%m',InvoiceDate) AS Month,
+    SUM(Total)
+FROM 
+    Invoice
+    GROUP BY YearMonth
+ORDER BY 
+    Year ASC, Month ASC;

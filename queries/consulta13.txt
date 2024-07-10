@@ -1,0 +1,8 @@
+-- Listar os compositores cujas faixas têm a maior média de duração e o valor dessa média.
+
+SELECT COALESCE(Composer, "Compositor Nao Identificado") AS Compositor,
+       AVG(Milliseconds) AS mean_milliseconds
+FROM track
+GROUP BY Composer
+ORDER BY mean_milliseconds DESC
+LIMIT 1;

@@ -1,0 +1,10 @@
+-- Obter os Clientes que compraram acima da média de compra de todos os clientes
+
+SELECT DISTINCT (a.firstname || " " || a.lastname) AS fullname
+FROM customer AS a
+INNER JOIN
+  (SELECT customerid
+   FROM invoice
+   WHERE total >=
+       (SELECT AVG(total)
+        FROM invoice)) AS b ON a.customerid= b.customerid;

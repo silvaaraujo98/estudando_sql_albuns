@@ -1,0 +1,8 @@
+-- Listar os álbuns onde a média das durações das faixas é superior a 5 minutos.
+
+SELECT album.Title,
+       ROUND(AVG(Milliseconds)/60000, 2)
+FROM track
+INNER JOIN album ON track.albumid = album.albumid
+GROUP BY Title
+HAVING mean_duration_in_minutes >= 5;
