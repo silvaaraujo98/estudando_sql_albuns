@@ -9,7 +9,7 @@ Este repositório contém um conjunto de consultas SQL projetadas para ajudar vo
 ## Índice
 
 - [Introdução](#introdução)
-- [Consultas Médias](#consultas-médias)
+- [★☆☆☆☆ 1 Estrela](#★☆☆☆☆ 1 Estrela)
 - [Consultas Difíceis](#consultas-difíceis)
 - [Uso](#uso)
 - [Contribuição](#contribuição)
