@@ -23,13 +23,14 @@ Este repositório contém um conjunto de consultas SQL projetadas para ajudar vo
 
 Este repositório inclui uma série de consultas SQL para um banco de dados de exemplo que inclui tabelas como `Artist`, `Album`, `Customer`, `Employee`, `Genre`, `Invoice`, `InvoiceLine`, `MediaType`, `Playlist`, `PlaylistTrack` e `Track`.
 
+## Nivel de Dificuldade
 As consultas estão divididas em 5 níveis:
 - ★☆☆☆☆ 1 Estrela
 - ★★☆☆☆ 2 Estrelas
 - ★★★☆☆ 3 Estrelas
 - ★★★★☆ 4 Estrelas
 - ★★★★★ 5 Estrelas
-### ★☆☆☆☆ 1 Estrela
+## ★☆☆☆☆ 1 Estrela
 
 1. **Listar os nomes dos álbuns e os nomes dos artistas correspondentes.**
    - [consulta1.txt](queries/consulta1.txt)
@@ -46,7 +47,7 @@ As consultas estão divididas em 5 níveis:
 5. **Mostrar o nome dos clientes e a cidade onde moram.**
    - [consulta5.txt](queries/consulta5.txt)
 
-### ★★☆☆☆ 2 Estrelas
+## ★★☆☆☆ 2 Estrelas
 
 1. **Listar o nome dos clientes e o total de suas compras, ordenado pelo valor total de compras em ordem decrescente.**
    - [consulta6.txt](queries/consulta6.txt)
@@ -63,7 +64,7 @@ As consultas estão divididas em 5 níveis:
 5. **Mostrar os nomes dos álbuns que possuem mais de 10 faixas (tracks).**
    - [consulta10.txt](queries/consulta10.txt)
 
-### ★★★☆☆ 3 Estrelas
+## ★★★☆☆ 3 Estrelas
 
 1. **Listar os álbuns onde a média das durações das faixas é superior a 5 minutos.**
    - [consulta11.txt](queries/consulta11.txt)
@@ -80,7 +81,7 @@ As consultas estão divididas em 5 níveis:
 5. **Obter os Clientes que compraram acima da média de compra de todos os clientes.**
    - [consulta16.txt](queries/consulta16.txt)
      
-### ★★★★☆ 4 Estrelas
+## ★★★★☆ 4 Estrelas
 
 1. **Obter o valor gasto em mês/ano.**
    - [consulta17.txt](queries/consulta17.txt)
@@ -97,7 +98,7 @@ As consultas estão divididas em 5 níveis:
 5. **Qual a frequência dos clientes?**
    - A fazer
 
-### ★★★★★ 5 Estrelas
+## ★★★★★ 5 Estrelas
 
 1. **Calcular a Receita Média por Gênero de Música.**
    - A fazer
