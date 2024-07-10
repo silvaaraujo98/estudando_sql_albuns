@@ -1,5 +1,5 @@
 
-![status](https://img.shields.io/badge/status-em%20progresso-yellow) ![GitHub last commit](https://img.shields.io/github/last-commit/silvaarauji98/estudando_sql_albuns)
+![status](https://img.shields.io/badge/status-em%20progresso-yellow) ![GitHub last commit](https://img.shields.io/github/last-commit/silvaaraujo98/estudando_sql_albuns)
 ![Maintenance](https://img.shields.io/maintenance/yes/2024)
 # Consultas SQL para Prática
 
