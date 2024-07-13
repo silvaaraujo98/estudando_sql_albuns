@@ -1,11 +1,11 @@
---Obter o valor gasto em mês/ano
-SELECT 
-    strftime('%m-%Y', InvoiceDate) AS YearMonth,
-    strftime('%Y',InvoiceDate) AS Year,
-    strftime('%m',InvoiceDate) AS Month,
-    SUM(Total)
-FROM 
-    Invoice
-    GROUP BY YearMonth
-ORDER BY 
-    Year ASC, Month ASC;
+-- Obter o TM por Ano
+
+WITH orders_sales_by_year AS
+  (SELECT strftime('%Y', invoicedate) AS YEAR,
+          COUNT(invoiceid) AS orders,
+          SUM(total) AS sales
+   FROM invoice
+   GROUP BY YEAR)
+SELECT YEAR,
+       round(sales/orders, 3)
+FROM orders_sales_by_year;
