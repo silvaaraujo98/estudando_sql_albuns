@@ -1,6 +1,6 @@
 
 ![status](https://img.shields.io/badge/status-em%20progresso-yellow) ![GitHub last commit](https://img.shields.io/github/last-commit/silvaaraujo98/estudando_sql_albuns)
-![Maintenance](https://img.shields.io/maintenance/yes/2024) ![Progresso](https://img.shields.io/badge/progresso-88%25-green)
+![Maintenance](https://img.shields.io/maintenance/yes/2024) ![Progresso](https://img.shields.io/badge/progresso-84%25-green)
 
 # Consultas SQL para Prática
 
@@ -93,7 +93,7 @@ As consultas estão divididas em 5 níveis:
    - [consulta19.txt](queries/consulta19.txt)
      
 4. **Obter os Gêneros mais vendidos por País.**
-   - [consulta20.txt](queries/consulta20.txt)
+   - A fazer
      
 5. **Qual a frequência dos clientes?**
    -  [consulta20.txt](queries/consulta20.txt)
