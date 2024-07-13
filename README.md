@@ -107,10 +107,10 @@ As consultas estão divididas em 5 níveis:
    -  [consulta22.txt](queries/consulta22.txt)
      
 3. **Determinar as Faixas (Tracks) que Nunca Foram Vendidas.**
-   -  [consulta23.txt](queries/consulta22.txt)
+   -  [consulta23.txt](queries/consulta23.txt)
      
 4. **Encontrar os Clientes que Não Fizeram Compras no Último Ano (2013).**
-   - [consulta24.txt](queries/consulta22.txt)
+   - [consulta24.txt](queries/consulta24.txt)
      
 5. **Listar os nomes dos clientes que compraram todas as faixas de um álbum específico.**
    - A fazer
