@@ -1,6 +1,6 @@
 
 ![status](https://img.shields.io/badge/status-em%20progresso-yellow) ![GitHub last commit](https://img.shields.io/github/last-commit/silvaaraujo98/estudando_sql_albuns)
-![Maintenance](https://img.shields.io/maintenance/yes/2024) ![Progresso](https://img.shields.io/badge/progresso-92%25-green)
+![Maintenance](https://img.shields.io/maintenance/yes/2024) ![Progresso](https://img.shields.io/badge/progresso-88%25-green)
 
 # Consultas SQL para Prática
 
@@ -79,7 +79,7 @@ As consultas estão divididas em 5 níveis:
    - [consulta14.txt](queries/consulta14.txt)
      
 5. **Obter os Clientes que compraram acima da média de compra de todos os clientes.**
-   - [consulta16.txt](queries/consulta16.txt)
+   - [consulta16.txt](queries/consulta15.txt)
      
 ## ★★★★☆ 4 Estrelas
 
