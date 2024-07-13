@@ -1,6 +1,6 @@
 
 ![status](https://img.shields.io/badge/status-em%20progresso-yellow) ![GitHub last commit](https://img.shields.io/github/last-commit/silvaaraujo98/estudando_sql_albuns)
-![Maintenance](https://img.shields.io/maintenance/yes/2024) ![Progresso](https://img.shields.io/badge/progresso-76%25-green)
+![Maintenance](https://img.shields.io/maintenance/yes/2024) ![Progresso](https://img.shields.io/badge/progresso-92%25-green)
 
 # Consultas SQL para Prática
 
@@ -90,24 +90,24 @@ As consultas estão divididas em 5 níveis:
    - [consulta18.txt](queries/consulta18.txt)
      
 3. **Obter os Gêneros mais vendidos por Ano.**
-   - [consulta19.txt](queries/consulta18.txt)
+   - [consulta19.txt](queries/consulta19.txt)
      
 4. **Obter os Gêneros mais vendidos por País.**
-   - [consulta20.txt](queries/consulta18.txt)
+   - [consulta20.txt](queries/consulta20.txt)
      
 5. **Qual a frequência dos clientes?**
-   - A fazer
+   -  [consulta21.txt](queries/consulta21.txt)
 
 ## ★★★★★ 5 Estrelas
 
 1. **Calcular a Receita Média por Gênero de Música.**
-   - A fazer
+   -  [consulta22.txt](queries/consulta22.txt)
      
 2. **Encontrar o Cliente com o Maior Valor Total de Compras em Cada Ano.**
-   - A fazer
+   -  [consulta23.txt](queries/consulta23.txt)
      
 3. **Determinar as Faixas (Tracks) que Nunca Foram Vendidas.**
-   - A fazer
+   -  A fazer
      
 4. **Encontrar os Clientes que Não Fizeram Compras no Último Ano (2013).**
    - A fazer
