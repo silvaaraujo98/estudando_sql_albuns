@@ -96,15 +96,15 @@ As consultas estão divididas em 5 níveis:
    - [consulta20.txt](queries/consulta20.txt)
      
 5. **Qual a frequência dos clientes?**
-   -  [consulta21.txt](queries/consulta21.txt)
+   -  [consulta20.txt](queries/consulta20.txt)
 
 ## ★★★★★ 5 Estrelas
 
 1. **Calcular a Receita Média por Gênero de Música.**
-   -  [consulta22.txt](queries/consulta22.txt)
+   -  [consulta21.txt](queries/consulta21.txt)
      
 2. **Encontrar o Cliente com o Maior Valor Total de Compras em Cada Ano.**
-   -  [consulta23.txt](queries/consulta23.txt)
+   -  [consulta22.txt](queries/consulta22.txt)
      
 3. **Determinar as Faixas (Tracks) que Nunca Foram Vendidas.**
    -  A fazer
