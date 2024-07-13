@@ -1,0 +1,10 @@
+-- Qual a frequência dos clientes?
+WITH sales_clientes_by_year AS(
+
+SELECT strftime('%Y',invoicedate) AS Year ,
+    CAST(COUNT(invoiceid) AS REAL)  AS sales ,
+    CAST(COUNT(DISTINCT(customerid)) AS REAL) AS number_of_clientes
+        FROM invoice
+        GROUP BY Year)
+        
+SELECT Year, ROUND(sales/number_of_clientes,3) AS frequency FROM sales_clientes_by_year
