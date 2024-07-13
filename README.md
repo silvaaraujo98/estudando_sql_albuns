@@ -1,6 +1,6 @@
 
 ![status](https://img.shields.io/badge/status-em%20progresso-yellow) ![GitHub last commit](https://img.shields.io/github/last-commit/silvaaraujo98/estudando_sql_albuns)
-![Maintenance](https://img.shields.io/maintenance/yes/2024) ![Progresso](https://img.shields.io/badge/progresso-88%25-green)
+![Maintenance](https://img.shields.io/maintenance/yes/2024) ![Progresso](https://img.shields.io/badge/progresso-96%25-green)
 
 # Consultas SQL para Prática
 
@@ -93,10 +93,10 @@ As consultas estão divididas em 5 níveis:
    - [consulta19.txt](queries/consulta19.txt)
      
 4. **Obter os Gêneros mais vendidos por País.**
-   - A fazer
+   - [consulta20.txt](queries/consulta20.txt)
      
 5. **Qual a frequência dos clientes?**
-   -  [consulta20.txt](queries/consulta20.txt)
+   -  [consulta25.txt](queries/consulta25.txt)
 
 ## ★★★★★ 5 Estrelas
 
@@ -107,10 +107,10 @@ As consultas estão divididas em 5 níveis:
    -  [consulta22.txt](queries/consulta22.txt)
      
 3. **Determinar as Faixas (Tracks) que Nunca Foram Vendidas.**
-   -  A fazer
+   -  [consulta23.txt](queries/consulta22.txt)
      
 4. **Encontrar os Clientes que Não Fizeram Compras no Último Ano (2013).**
-   - A fazer
+   - [consulta24.txt](queries/consulta22.txt)
      
 5. **Listar os nomes dos clientes que compraram todas as faixas de um álbum específico.**
    - A fazer
