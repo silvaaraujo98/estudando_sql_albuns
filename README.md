@@ -79,7 +79,7 @@ As consultas estão divididas em 5 níveis:
    - [consulta14.txt](queries/consulta14.txt)
      
 5. **Obter os Clientes que compraram acima da média de compra de todos os clientes.**
-   - [consulta16.txt](queries/consulta15.txt)
+   - [consulta16.txt](queries/consulta16.txt)
      
 ## ★★★★☆ 4 Estrelas
 
