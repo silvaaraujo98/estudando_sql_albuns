@@ -1,17 +1,10 @@
--- Obter os Generos mais vendidos por País
-
-WITH trackbycountry AS
-  (SELECT *
-   FROM invoice AS a
-   INNER JOIN customer AS b ON a.customerid = b.customerid
-   INNER JOIN invoiceline AS c ON a.invoiceid = c.invoiceid
-   INNER JOIN track AS d ON c.trackid = d.trackid)
-SELECT a.country,
-       b.name,
-       SUM(a.quantity) AS sold_amount
-FROM trackbycountry AS a
-INNER JOIN genre AS b ON a.genreid = b.genreid
-GROUP BY a.country,
-         b.name
-ORDER BY a.country,
-         sold_amount DESC ;
+-- Qual a frequência dos clientes por Ano
+ WITH sales_clientes_by_year AS
+  (SELECT strftime('%Y', invoicedate) AS YEAR,
+          CAST(COUNT(invoiceid) AS REAL) AS sales,
+          CAST(COUNT(DISTINCT(customerid)) AS REAL) AS number_of_clientes
+   FROM invoice
+   GROUP BY YEAR)
+SELECT YEAR,
+       ROUND(sales/number_of_clientes, 3) AS frequency
+FROM sales_clientes_by_year;

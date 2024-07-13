@@ -1,10 +1,22 @@
--- Qual a frequência dos clientes por Ano
- WITH sales_clientes_by_year AS
-  (SELECT strftime('%Y', invoicedate) AS YEAR,
-          CAST(COUNT(invoiceid) AS REAL) AS sales,
-          CAST(COUNT(DISTINCT(customerid)) AS REAL) AS number_of_clientes
+-- Encontrar o Cliente com o Maior Valor Total de Compras em Cada Ano.
+WITH sales_by_customer_year AS
+  (SELECT CustomerId,
+          strftime('%Y', invoicedate) AS YEAR,
+          SUM(Total) AS sales
    FROM invoice
-   GROUP BY YEAR)
-SELECT YEAR,
-       ROUND(sales/number_of_clientes, 3) AS frequency
-FROM sales_clientes_by_year;
+   GROUP BY YEAR,
+            customerid),
+     max_sales_by_year AS
+  (SELECT YEAR,
+          Max(sales) AS Sales_max
+   FROM sales_by_customer_year
+   GROUP BY YEAR),
+     max_sales_by_year_customerid AS
+  (SELECT *
+   FROM sales_by_customer_year AS a
+   INNER JOIN max_sales_by_year AS b ON a.year = b.year
+   WHERE sales = sales_max)
+SELECT b.firstname || " " || b.lastname AS fullname,
+       a.year
+FROM max_sales_by_year_customerid AS a
+INNER JOIN customer AS b ON a.customerid = b.customerid;

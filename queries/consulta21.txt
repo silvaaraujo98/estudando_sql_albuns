@@ -1,10 +1,19 @@
--- Qual a frequência dos clientes por Ano
- WITH sales_clientes_by_year AS
-  (SELECT strftime('%Y', invoicedate) AS YEAR,
-          CAST(COUNT(invoiceid) AS REAL) AS sales,
-          CAST(COUNT(DISTINCT(customerid)) AS REAL) AS number_of_clientes
-   FROM invoice
-   GROUP BY YEAR)
-SELECT YEAR,
-       ROUND(sales/number_of_clientes, 3) AS frequency
-FROM sales_clientes_by_year;
+--Calcular a Receita Média por Gênero de Música.
+WITH avg_revenue_by_genreid_invoiceid AS
+  (SELECT a.invoiceid,
+          b.genreid,
+          ROUND(AVG(a.quantity*a.unitprice), 2) AS avg_revenue
+   FROM invoiceline AS a
+   INNER JOIN track AS b ON a.trackid = b.trackid
+   GROUP BY b.genreid,
+            invoiceid),
+     avg_total_revenue_by_genreid AS
+  (SELECT genreid,
+          ROUND(SUM(avg_revenue), 2) AS avg_total_revenue
+   FROM avg_revenue_by_genreid_invoiceid
+   GROUP BY genreid)
+SELECT b.name,
+       a.avg_total_revenue
+FROM avg_total_revenue_by_genreid AS a
+INNER JOIN genre AS b ON a.genreid = b.genreid
+ORDER BY avg_total_revenue DESC
