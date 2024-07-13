@@ -1,0 +1,11 @@
+-- Encontrar os Clientes que Não Fizeram Compras no Último Ano (2013).
+WITH invoices_in_lastyear AS
+  (SELECT *
+   FROM invoice
+   WHERE strftime('%Y', invoicedate) =
+       (SELECT strftime('%Y', MAX(invoicedate))
+        FROM invoice))
+SELECT a.firstname || " " || a.lastname AS fullname
+FROM customer AS a
+LEFT JOIN invoices_in_lastyear AS b ON a.customerid = b.customerid
+WHERE invoiceid IS NULL;

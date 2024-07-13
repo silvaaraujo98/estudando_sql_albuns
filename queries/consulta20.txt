@@ -1,10 +1,13 @@
--- Qual a frequência dos clientes por Ano
- WITH sales_clientes_by_year AS
-  (SELECT strftime('%Y', invoicedate) AS YEAR,
-          CAST(COUNT(invoiceid) AS REAL) AS sales,
-          CAST(COUNT(DISTINCT(customerid)) AS REAL) AS number_of_clientes
-   FROM invoice
-   GROUP BY YEAR)
-SELECT YEAR,
-       ROUND(sales/number_of_clientes, 3) AS frequency
-FROM sales_clientes_by_year;
+-- Obter os Generos mais vendidos por País
+
+SELECT d.name,
+       c.billingcountry,
+       COUNT(c.invoiceid) AS sales_amount
+FROM invoiceline AS a
+INNER JOIN track AS b ON a.trackid = b.trackid
+INNER JOIN invoice AS c ON a.invoiceid = c.invoiceid
+INNER JOIN genre AS d ON b.genreid = d.genreid
+GROUP BY d.name,
+         c.billingcountry
+ORDER BY c.billingcountry,
+         sales_amount DESC;
