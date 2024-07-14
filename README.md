@@ -1,7 +1,6 @@
 
 ![Projeto Completado](https://img.shields.io/badge/Projeto-Completado-green) ![GitHub last commit](https://img.shields.io/github/last-commit/silvaaraujo98/estudando_sql_albuns)
-![Maintenance](https://img.shields.io/maintenance/yes/2024) ![Progresso](https://img.shields.io/badge/progresso-100%%30-green)
-
+![Maintenance](https://img.shields.io/maintenance/yes/2024) ![100% do Projeto](https://img.shields.io/badge/Projeto-100%25-blue)
 # Consultas SQL para Prática
 
 Este repositório contém um conjunto de consultas SQL projetadas para ajudar você a melhorar suas habilidades em SQL. As consultas estão categorizadas em níveis por estrelas, cobrindo várias operações SQL, como joins, group by, subqueries e expressões de tabela comum (CTEs). Essas questões são do livro Introdução à linguagem SQL de Thomas Nield, peguei o banco de dados que ele disponibilizou no github dele, passei esse banco de dados para o gpt e pedi 25 questões.
