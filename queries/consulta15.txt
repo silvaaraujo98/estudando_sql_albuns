@@ -1,5 +1,7 @@
 -- Listar os nomes dos clientes que compraram todas as faixas de um álbum específico.
 
+-- A ideia é comparar a quantidade de tracks distintas que um mesmo cliente comprou de um álbum especifico com a quantidade de tracks daquele album
+
 CREATE VIEW customertrackalbum AS
     SELECT a.customerID,
            c.name,
@@ -44,3 +46,5 @@ SELECT b.firstname,
        customer AS b ON a.customerid = b.customerid
        INNER JOIN
        album AS c ON a.albumid = c.albumid;
+
+-- No fim das contas, apenas os álbuns com apenas 1 track tiveram esse tipo de compra.
