@@ -1,5 +1,5 @@
 
-![Projeto Completado](https://img.shields.io/badge/Projeto-Completado-green) ![GitHub last commit](https://img.shields.io/github/last-commit/silvaaraujo98/estudando_sql_albuns)
+![Projeto Concluído](https://img.shields.io/badge/Projeto-Concluído-green) ![GitHub last commit](https://img.shields.io/github/last-commit/silvaaraujo98/estudando_sql_albuns)
 ![Maintenance](https://img.shields.io/maintenance/yes/2024) ![100% do Projeto](https://img.shields.io/badge/Projeto-100%25-blue)
 # Consultas SQL para Prática
 
