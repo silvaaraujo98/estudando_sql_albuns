@@ -11,7 +11,7 @@ Este repositório contém um conjunto de consultas SQL projetadas para ajudar vo
 
 - [Introdução](#introdução)
 - [Níveis de Dificuldade das Questões](#nivel-de-dificuldade)
-- [★☆☆☆☆ 1 Estrela](#1-estrela-★☆☆☆☆)
+- [★☆☆☆☆ 1 Estrela](#1-estrela)
 - [★★☆☆☆ 2 Estrelas](#★★☆☆☆-2-Estrelas)
 - [★★★☆☆ 3 Estrelas](#3-estrelas)
 - [★★★★☆ 4 Estrelas](#4-estrelas)
@@ -31,8 +31,8 @@ As consultas estão divididas em 5 níveis:
 - ★★★☆☆ 3 Estrelas
 - ★★★★☆ 4 Estrelas
 - ★★★★★ 5 Estrelas
-## 1 Estrela ★☆☆☆☆
-
+## 1 Estrela 
+★☆☆☆☆
 1. **Listar os nomes dos álbuns e os nomes dos artistas correspondentes.**
    - [consulta1.txt](queries/consulta1.txt)
 
