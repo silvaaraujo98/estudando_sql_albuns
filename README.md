@@ -10,7 +10,7 @@ Este repositório contém um conjunto de consultas SQL projetadas para ajudar vo
 ## Índice
 
 - [Introdução](#introdução)
-- [Níveis de Dificuldade das Questões](#níveis-de-dificuldade-das-questões)
+- [Níveis de Dificuldade das Questões](#nivel-de-dificuldade)
   - [★☆☆☆☆ 1 Estrela](#1-estrela)
   - [★★☆☆☆ 2 Estrelas](#★★☆☆☆-2-Estrelas)
   - [★★★☆☆ 3 Estrelas](#3-estrelas)
