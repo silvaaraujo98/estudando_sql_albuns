@@ -1,0 +1,46 @@
+-- Listar os nomes dos clientes que compraram todas as faixas de um álbum específico.
+
+CREATE VIEW customertrackalbum AS
+    SELECT a.customerID,
+           c.name,
+           d.title
+      FROM invoice AS a
+           INNER JOIN
+           invoiceline AS b ON a.invoiceid = b.invoiceid
+           INNER JOIN
+           track AS c ON b.trackid = c.trackid
+           INNER JOIN
+           album AS d ON c.albumid = d.albumid;
+
+WITH tracks_by_customer_album AS (
+    SELECT customerid,
+           albumid,
+           COUNT(DISTINCT Name) AS tracks_distinct_count
+      FROM customertrackalbum
+     GROUP BY customerid,
+              albumid
+),
+tracks_by_album AS (
+    SELECT albumid,
+           COUNT(trackid) AS number_of_tracks
+      FROM track
+     GROUP BY albumid
+),
+customer_purchased_all_tracks_in_album AS (
+    SELECT a.customerid,
+           a.albumid,
+           a.tracks_distinct_count,
+           b.number_of_tracks
+      FROM tracks_by_customer_album AS A
+           INNER JOIN
+           tracks_by_album AS B ON a.albumid = b.albumid
+     WHERE a.tracks_distinct_count = b.number_of_tracks
+)
+SELECT b.firstname,
+       b.lastname,
+       c.title
+  FROM customer_purchased_all_tracks_in_album AS a
+       INNER JOIN
+       customer AS b ON a.customerid = b.customerid
+       INNER JOIN
+       album AS c ON a.albumid = c.albumid;
