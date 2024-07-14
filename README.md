@@ -3,7 +3,7 @@
 ![Maintenance](https://img.shields.io/maintenance/yes/2024) ![100% do Projeto](https://img.shields.io/badge/Projeto-100%25-blue)
 # Consultas SQL para Prática
 
-Este repositório contém um conjunto de consultas SQL projetadas para ajudar você a melhorar suas habilidades em SQL. As consultas estão categorizadas em níveis por estrelas, cobrindo várias operações SQL, como joins, group by, subqueries e expressões de tabela comum (CTEs). Essas questões são do livro Introdução à linguagem SQL de Thomas Nield, peguei o banco de dados que ele disponibilizou no github dele, passei esse banco de dados para o gpt e pedi 25 questões.
+Este repositório contém um conjunto de consultas SQL projetadas para ajudar a você a melhorar suas habilidades em SQL. As consultas estão categorizadas em níveis por estrelas, cobrindo várias operações SQL, como joins, group by, subqueries, expressões de tabela comum (CTEs) e Views. Essas questões são do livro Introdução à linguagem SQL de Thomas Nield, através do banco de dados que o Thomas disponibilizou no github dele, essas questões foram criadas a partir da inserção do banco de dados no gpt e solicitando as 25 questões.
 
 ![Livro utilizado](images/foto_livro.jpg)
 
@@ -12,7 +12,7 @@ Este repositório contém um conjunto de consultas SQL projetadas para ajudar vo
 - [Introdução](#introdução)
 - [Níveis de Dificuldade das Questões](#nivel-de-dificuldade)
 - [★☆☆☆☆ 1 Estrela](#1-estrela)
-- [★★☆☆☆ 2 Estrelas](#★★☆☆☆-2-Estrelas)
+- [★★☆☆☆ 2 Estrelas](#2-Estrelas)
 - [★★★☆☆ 3 Estrelas](#3-estrelas)
 - [★★★★☆ 4 Estrelas](#4-estrelas)
 - [★★★★★ 5 Estrelas](#5-estrelas)
@@ -48,8 +48,8 @@ As consultas estão divididas em 5 níveis:
 5. **Mostrar o nome dos clientes e a cidade onde moram.**
    - [consulta5.txt](queries/consulta5.txt)
 
-## ★★☆☆☆ 2 Estrelas
-
+##  2 Estrelas
+★★☆☆☆
 1. **Listar o nome dos clientes e o total de suas compras, ordenado pelo valor total de compras em ordem decrescente.**
    - [consulta6.txt](queries/consulta6.txt)
 
@@ -65,8 +65,8 @@ As consultas estão divididas em 5 níveis:
 5. **Mostrar os nomes dos álbuns que possuem mais de 10 faixas (tracks).**
    - [consulta10.txt](queries/consulta10.txt)
 
-## ★★★☆☆ 3 Estrelas
-
+##  3 Estrelas
+★★★☆☆
 1. **Listar os álbuns onde a média das durações das faixas é superior a 5 minutos.**
    - [consulta11.txt](queries/consulta11.txt)
      
@@ -82,8 +82,8 @@ As consultas estão divididas em 5 níveis:
 5. **Obter os Clientes que compraram acima da média de compra de todos os clientes.**
    - [consulta16.txt](queries/consulta16.txt)
      
-## ★★★★☆ 4 Estrelas
-
+##  4 Estrelas
+★★★★☆
 1. **Obter o valor gasto em mês/ano.**
    - [consulta17.txt](queries/consulta17.txt)
      
@@ -99,8 +99,8 @@ As consultas estão divididas em 5 níveis:
 5. **Qual a frequência dos clientes?**
    -  [consulta25.txt](queries/consulta25.txt)
 
-## ★★★★★ 5 Estrelas
-
+##  5 Estrelas
+★★★★★
 1. **Calcular a Receita Média por Gênero de Música.**
    -  [consulta21.txt](queries/consulta21.txt)
      
