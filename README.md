@@ -114,7 +114,7 @@ As consultas estão divididas em 5 níveis:
    - [consulta24.txt](queries/consulta24.txt)
      
 5. **Listar os nomes dos clientes que compraram todas as faixas de um álbum específico.**
-   - [consulta24.txt](queries/consulta15.txt)
+   - [consulta15.txt](queries/consulta15.txt)
      
 ## Uso
 
